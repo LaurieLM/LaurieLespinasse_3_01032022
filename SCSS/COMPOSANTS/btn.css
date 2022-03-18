@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+}
+
+.btn_accueil {
+  font-size: 18px;
+  border: 0px;
+  border-radius: 25px 25px 25px 25px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 0px 7px 0px grey;
+  color: white;
+  padding: 14px;
+  margin: 11px 0px 55px 0px;
+}
+
+.btn_accueil:hover {
+  box-shadow: 0px 0px 9px 2px grey;
+}
+
+.section_nav .btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  height: 70px;
+  font-size: 17px;
+  font-weight: 600;
+  border: 0px;
+  border-radius: 25px 25px 25px 25px;
+  background: white;
+  color: black;
+  box-shadow: 0px 0px 13px 4px lightgrey;
+  margin: 0px 0px 20px 0px;
+}
+.section_nav .btn:hover {
+  background-color: #d1b1f847;
+  box-shadow: 0px 0px 13px 10px lightgrey;
+}
+.section_nav .btn:hover .icon {
+  color: #9356DC;
+}
+
+.btn_commande {
+  font-size: 18px;
+  border: 0px;
+  border-radius: 25px 25px 25px 25px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 0px 7px 0px grey;
+  color: white;
+  padding: 14px;
+  margin: 11px 0px 55px 0px;
+  margin: 40px 0px 55px 0px;
+  padding: 10px 35px 10px 35px;
+  font-family: "Roboto";
+  text-align: center;
+  transform: scale(1);
+  transition: transform 0.4s;
+}
+.btn_commande:hover {
+  box-shadow: 0px 0px 9px 2px grey;
+  transform: scale(1.15);
+}
+
+@media screen and (min-width: 768px) {
+  .btn_accueil {
+    font-size: 20px;
+    margin: 30px 0px 55px 0px;
+    padding: 17px;
+  }
+
+  .section_nav .btn {
+    width: 100%;
+    margin: 0px 15px 30px 15px;
+  }
+}
+@media screen and (min-width: 1068px) {
+  .section_nav .btn {
+    margin: 20px 15px 70px 15px;
+  }
+}/*# sourceMappingURL=btn.css.map */

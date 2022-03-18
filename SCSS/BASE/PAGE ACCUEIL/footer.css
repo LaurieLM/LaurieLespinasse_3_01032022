@@ -1,0 +1,32 @@
+footer {
+  font-family: "Roboto";
+  width: 100%;
+  background-color: #000000cc;
+}
+footer h3 {
+  font-family: "Shrikhand";
+  color: white;
+  padding: 20px 0px 0px 20px;
+  font-size: 20px;
+  font-weight: 100;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+footer div i {
+  position: absolute;
+  color: white;
+  left: 5%;
+}
+footer a {
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+  padding: 0% 0% 3% 5%;
+}
+footer .text {
+  font-weight: bold;
+  padding-left: 13%;
+}/*# sourceMappingURL=footer.css.map */

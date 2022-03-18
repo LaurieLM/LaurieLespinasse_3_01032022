@@ -1,0 +1,141 @@
+$greenwater:#b4e7b6;
+$verylightgrey:#f5f5f5;
+
+@mixin nomargin {
+    margin: 0;
+    
+}
+
+div {
+    position: relative;
+    width: auto;
+
+    img {
+        width: 100%;
+        height: 20%;
+        object-fit: cover;
+        
+    }
+}
+
+.menu {
+    font-family: 'Roboto';
+    background-color:$verylightgrey ;
+    border-radius: 40px 40px 0px 0px;
+    margin-top: -80px;
+
+    nav {
+        text-align: center;
+    }
+}
+
+h2 {
+    font-family: "Shrikhand";
+    font-size: 25px;
+    padding: 8% 0% 0% 6%;
+
+    .regular,.solid {
+        /*  Sert à centrer le svg dans sa div  */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        /*  Sert à centrer la div dans le container, ces valeurs peuvent bouger dans ton projet  */
+        position: absolute;
+        margin-top: -29px;
+        left: 84%;
+        
+        /*  Sert à donner une taille à la div pour le hover  */
+        background-color: $verylightgrey;
+        width: 25px;
+        height: 25px;
+        border-radius: 10px;
+    }
+
+      
+    /* Sert à ce que le coeur vide soit devant le coeur plein pour le masquer */
+    .regular {
+        z-index: 10;
+    }
+
+    .solid {
+        fill: url(#Gradient1);
+    }
+      
+    /* Sert à faire disparaitre le coeur vide sur le hover */
+    .regular:hover {
+        display:none;
+        
+    }
+}
+
+
+
+.card {
+    width: auto;
+    height: 70px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px grey;
+    border-radius: 20px;
+    margin: 0px 2% 13px 2%;
+    padding: 0px 0px 0px 15px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 17px;
+    margin: 8% 0% 5% 5%;
+
+    a::after {
+    content: "";
+    display: block;
+    width: 45px;
+    padding-top: 3px;
+    border-bottom: 2px solid $greenwater;
+  }
+}
+
+h4 {
+    @include nomargin;
+    padding: 15px 0px 0px 0px;
+    font-size: 16px;
+}
+
+p {
+    @include nomargin;
+    padding: 5px 0px 8px 0px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.price {
+    @include nomargin;
+    position: absolute;
+    font-weight: 900;
+    left: 83%;
+    bottom: 17%; 
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .card {
+            width: 25%;
+            height: 142px;
+            margin: 0px 0% 13px 0%;
+            padding: 0px 19px 0px 19px;
+
+            .price {
+                margin: 43px 0px 0px 0px;
+                position: unset;
+                left: 0%;
+                bottom: 0%;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+$color_primary:#9356DC;
+$color_secondary: #FF79DA;
+$color_tertiary: #99E2D0;
+
+.icon {
+    position: absolute;
+    left: 26%;
+    top: 10.7%;
+}
+
+.section_accueil {
+    background-color: #f5f5f5;
+    padding: 2px;
+    text-align: center;
+
+    h2 {
+        font-size: 25px;
+        font-weight: 700;
+        margin: 36px 45px 0px 45px;
+    }
+
+    p {
+        font-size: 19px;
+        font-weight: 300;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .section_accueil {
+
+        h2 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+    }
+  }
+
+  @media screen and (min-width: 1068px) {
+    .section_accueil {
+        padding: 70px;
+    }
+}
+
