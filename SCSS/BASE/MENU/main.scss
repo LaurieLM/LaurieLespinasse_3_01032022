@@ -50,6 +50,7 @@ h2 {
         width: 25px;
         height: 25px;
         border-radius: 10px;
+        
     }
 
       
@@ -69,7 +70,14 @@ h2 {
     }
 }
 
-
+@keyframes progress-menu {
+    
+    to {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+  
 
 .card {
     width: auto;
@@ -79,12 +87,28 @@ h2 {
     border-radius: 20px;
     margin: 0px 2% 13px 2%;
     padding: 0px 0px 0px 15px;
+    
+
+    animation: progress-menu 500ms forwards;
+    opacity: 0;
+    transform: translateY(2rem);
+  
+    &:nth-of-type(1) {
+      animation-delay: 0ms;
+    }
+    &:nth-of-type(2) {
+      animation-delay: 250ms;
+    }
+    &:nth-of-type(3) {
+      animation-delay: 500ms;
+    }
 }
 
 h3 {
     font-weight: 400;
     font-size: 17px;
     margin: 8% 0% 5% 5%;
+    
 
     a::after {
     content: "";
@@ -99,6 +123,14 @@ h4 {
     @include nomargin;
     padding: 15px 0px 0px 0px;
     font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:hover {
+        overflow: visible;
+        white-space: normal;
+    }
 }
 
 p {
@@ -106,6 +138,14 @@ p {
     padding: 5px 0px 8px 0px;
     font-size: 13px;
     font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:hover {
+        overflow: visible;
+        white-space: normal;
+    }
 }
 
 .price {
@@ -126,12 +166,12 @@ p {
 
         .card {
             width: 25%;
-            height: 142px;
+            height: 100px;
             margin: 0px 0% 13px 0%;
             padding: 0px 19px 0px 19px;
 
             .price {
-                margin: 43px 0px 0px 0px;
+                margin: 9px 0px 0px 0px;
                 position: unset;
                 left: 0%;
                 bottom: 0%;

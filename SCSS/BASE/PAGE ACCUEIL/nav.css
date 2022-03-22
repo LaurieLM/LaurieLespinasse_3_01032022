@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+form {
+  position: relative;
+}
+
 .place {
   border-top: 2px solid lightgrey;
   border-bottom: 0px;
@@ -89,6 +93,6 @@ body {
 }
 @media screen and (min-width: 1068px) {
   .section_nav .icon1 {
-    padding: 0px 15px 0px 15px;
+    padding: 0px 30px 0px 50px;
   }
 }/*# sourceMappingURL=nav.css.map */

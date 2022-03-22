@@ -17,9 +17,11 @@ footer {
             font-weight: 500;
 
             i {
-                position: absolute;
+                width: 16px;
+                margin-right: 14px;
+                text-align: center;
                 color: white;
-                left: 5%;
+                
             }
         }
 
@@ -27,12 +29,11 @@ footer {
             font-weight: 300;
             color: white;
             text-decoration: none;
-            padding: 0% 0% 3% 5%;
+            padding: 0px 0px 11px 21px;
         }
 
         .text {
-            font-weight: bold;
-            padding-left: 13%;
+            font-weight: 500;
         }
 }
 
