@@ -22,19 +22,30 @@
         <link rel="stylesheet" href="scss/base/PAGE ACCUEIL/main.css">
         <link rel="stylesheet" href="scss/base/PAGE ACCUEIL/footer.css">
         <link rel="stylesheet" href="SCSS/COMPOSANTS/btn.css">
+        <link rel="stylesheet" href="SCSS/COMPOSANTS/loadingspinner.css">
     </head>
+    <!-- Loading Spinner -->
 
-    <!-- Header -->
+   <div class="loadingspinner">
+        <center><br><br><br>
+        <div class="loader" id="loader"></div>
+        <div class="loader" id="loader2"></div>
+        <div class="loader" id="loader3"></div>
+        <div class="loader" id="loader4"></div>
+        <span id="text">ohmyfood</span>
+        <br></center>
+    </div>
 
-    <header>
+    <div class="page_accueil">
+        <!-- Header -->
+
+        <header>
 
             <h1>ohmyfood</h1>
 
-    </header>
-
-    <body>
-        
+        </header>
     
+        <body>
 
         <!-- Section Accueil -->
  
@@ -43,13 +54,13 @@
                 <form action="search.php" method="get"> 
 
                      
-                    <i class="fa-solid fa-location-dot"></i>
-                    <label for="search" hidden> Rechercher un restaurant </label>
+                    
+                    
                     
                     <input class="place" type="search" id="search" name="q"   placeholder= " Paris, Belleville"
 
                         aria-label="Rechercher un restaurant">
-
+                    <label for="search"> <i class="fa-solid fa-location-dot"></i> </label>
                         
                 </form>
             </nav>
@@ -250,11 +261,11 @@
                 </div>
             </section>
         </main>
-    </body>
+        </body>
 
-    <!-- Footer -->
+        <!-- Footer -->
 
-    <footer>
+        <footer>
 
         <div class="logo">
 
@@ -268,5 +279,6 @@
             <a href="#">Contact</a>
         </div>
 
-    </footer>
+        </footer>
+    </div>
 </html>
