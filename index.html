@@ -1,284 +1,250 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <!-- Loading Spinner -->
+        <div class="loadingspinner">
+            <br><br><br>
+            <div class="loader" id="loader"></div>
+            <div class="loader" id="loader2"></div>
+            <div class="loader" id="loader3"></div>
+            <div class="loader" id="loader4"></div>
+            <span id="text">ohmyfood</span>
+            <br>
+        </div>
 
-    <head>
+        <div class="page_accueil">
+            <!-- Header -->
+            <header>
 
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <h1>ohmyfood</h1>
 
-        <title>index</title>
+            </header>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
-       
-        <script src="https://kit.fontawesome.com/b47249feaf.js" crossorigin="anonymous"></script>
-
-        <link rel="stylesheet" href="scss/composants/normalize.css">
-        <link rel="stylesheet" href="scss/base/PAGE ACCUEIL/header.css">
-        <link rel="stylesheet" href="scss/base/PAGE ACCUEIL/accueil.css">
-        <link rel="stylesheet" href="scss/base/PAGE ACCUEIL/nav.css">
-        <link rel="stylesheet" href="scss/base/PAGE ACCUEIL/main.css">
-        <link rel="stylesheet" href="scss/base/PAGE ACCUEIL/footer.css">
-        <link rel="stylesheet" href="SCSS/COMPOSANTS/btn.css">
-        <link rel="stylesheet" href="SCSS/COMPOSANTS/loadingspinner.css">
-    </head>
-    <!-- Loading Spinner -->
-
-   <div class="loadingspinner">
-        <center><br><br><br>
-        <div class="loader" id="loader"></div>
-        <div class="loader" id="loader2"></div>
-        <div class="loader" id="loader3"></div>
-        <div class="loader" id="loader4"></div>
-        <span id="text">ohmyfood</span>
-        <br></center>
-    </div>
-
-    <div class="page_accueil">
-        <!-- Header -->
-
-        <header>
-
-            <h1>ohmyfood</h1>
-
-        </header>
-    
-        <body>
-
-        <!-- Section Accueil -->
- 
+            <!-- Search Bar -->
             <nav class="search_bar">
-
                 <form action="search.php" method="get"> 
-
-                     
-                    
-                    
-                    
+        
                     <input class="place" type="search" id="search" name="q"   placeholder= " Paris, Belleville"
-
                         aria-label="Rechercher un restaurant">
+
                     <label for="search"> <i class="fa-solid fa-location-dot"></i> </label>
                         
                 </form>
             </nav>
 
-        <section class="section_accueil">
+            <!-- Accueil -->
+            <section class="section_accueil">
+                
+                <h2>Réservez le menu qui vous convient</h2>
+                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
             
-        
-            <h2>Réservez le menu qui vous convient</h2>
-            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            </section>
 
-            <nav>
-                <a href="#restaurants">
-                    <button class="btn_accueil" type="button">Explorer nos restaurants</button>
-                </a>
-            </nav>
-        </section>
+            <!-- Bouton Exploration Restaurants -->
+            <a href="#restaurants">
+                <button class="accueil" type="button">Explorer nos restaurants</button>
+            </a>
 
-        <!-- Section Naviguation -->
+            <!-- Déroulement Réservation -->
+            <section class="fonctionnement">
 
-        <section class="section_nav">
-            
                 <h2>Fonctionnement</h2>
 
-            <nav>
-                <!-- Boutons -->
-
-                <button class="btn" type="button">
+                <div>
                     <div class="number">1</div>
                     <div class="icon1">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
-                    Choisissez un restaurant
-                </button>
-                
-                                
-                <button class="btn" type="button">
+                    <p>Choisissez un restaurant</p>
+                </div>
+
+                <div>
                     <div class="number">2</div>
                     <div class="icon1">
                         <i class="fas fa-list-ul"></i>
                     </div>
-                    Composez votre menu
-                </button>
-                
+                    <p>Composez votre menu</p>
+                </div>
 
-                <button class="btn" type="button">
+                <div>
                     <div class="number">3</div>
                     <div class="icon1">
                         <i class="fas fa-store"></i>
                     </div>
-                    Dégustez au restaurant
-                </button>
-                
-            </nav>
-        </section>
+                    <p>Dégustez au restaurant</p>
+                </div>
+            </section>
 
-        <!-- Section Restaurants -->
-        <main>
-            <section class="section_resto">
+            <!-- Restaurants -->
+            <main>
 
                 <h2 id="restaurants">Restaurants</h2>
 
                 <div class="container">
-
+                    
                     <!-- Card 1 -->
-
                     <div class="card">
+                        <a href="./Lapalettedugout.html">
 
-                    <a href="./Lapalettedugout.html">
-                        <div class="card-image">
+                            <div class="card_img">
+                            <img src="./images/restaurants/la_palette_du_gout.jpg" alt="La palette du gout">
+                            </div>
 
-                            <img src="./images/restaurants/la_palette_du_gout.jpg" alt="La Palette du Goût">
-                        </div>
+                            <div class="card_body">
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
 
-                        <div class="card-body">
-
-                            <h3>La palette du goût 
-                                <div class="container">
-                                    <div class="solid">
-                                        <svg width="30" height="30" viewBox="0 0 512 512">
-                                            <defs>
-                                                
-                                                <linearGradient id="Gradient1" x1="0" x2="0" y1="0" y2="1">
-                                                    <stop offset="0%" stop-color="#9356DC"/>
-                                                    <stop offset="100%" stop-color="#FF79DA"/>
-                                                  </linearGradient>
-                                            </defs>
-                                            <path d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z"/>
-                                        </svg>
-                                    </div>
-                                    <div class="regular">
-                                        <svg width="30" height="30" viewBox="0 0 512 512">
-                                            <path d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z"/>
-                                        </svg>
-                                    </div>
+                            <div class="icon">
+                                <div class="solid">
+                                    <svg width="30" height="30" viewBox="0 0 512 512">
+                                        <defs>
+                                            
+                                            <linearGradient id="Gradient1" x1="0" x2="0" y1="0" y2="1">
+                                                <stop offset="0%" stop-color="#9356DC"/>
+                                                <stop offset="100%" stop-color="#FF79DA"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <path d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z"/>
+                                    </svg>
                                 </div>
-                            </h3>
 
-                            
-                            
-                            <p>Ménilmontant</p>    
-                        </div>
-                    </a>
+                                <div class="regular">
+                                    <svg width="30" height="30" viewBox="0 0 512 512">
+                                        <path d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            </div>
+                        </a>
                     </div>
-
+                    
                     <!-- Card 2 -->
                     <div class="card">
+                        <a href="./Lanoteenchantee.html">
 
-                    <a href="./Lanoteenchantee.html">
-                        <div class="card-image">
+                            <div class="card_img">
+                            <img src="./images/restaurants/la_note_enchantee.jpg" alt="La note enchanté">
+                            </div>
 
-                            <img src="./images/restaurants/la_note_enchantee.jpg" alt="La Note Enchantée">
-                        </div>
+                            <div class="card_body">
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
 
-                        <div class="card-body">
-                    
-                            <h3>La note enchanté 
-                                <div class="container">
-                                    <div class="solid">
-                                        <svg width="30" height="30" viewBox="0 0 512 512">
-                                            <path d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z"/>
-                                        </svg>
-                                    </div>
-                                    <div class="regular">
-                                        <svg width="30" height="30" viewBox="0 0 512 512">
-                                            <path d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z"/>
-                                        </svg>
-                                    </div>
+                            <div class="icon">
+                                <div class="solid">
+                                    <svg width="30" height="30" viewBox="0 0 512 512">
+                                        <defs>
+                                            
+                                            <linearGradient id="Gradient1" x1="0" x2="0" y1="0" y2="1">
+                                                <stop offset="0%" stop-color="#9356DC"/>
+                                                <stop offset="100%" stop-color="#FF79DA"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <path d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z"/>
+                                    </svg>
                                 </div>
-                            </h3>
-                        
-                            <p>Charonne</p>                            
-                        </div>
-                    </a>
-                    </div>
 
+                                <div class="regular">
+                                    <svg width="30" height="30" viewBox="0 0 512 512">
+                                        <path d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            </div>
+                        </a>
+                    </div>
+                    
                     <!-- Card 3 -->
                     <div class="card">
+                        <a href="./Alafrancaise.html">
 
-                    <a href="./Alafrancaise.html">
-                        <div class="card-image">
+                            <div class="card_img">
+                            <img src="./images/restaurants/a_la_française.jpg" alt="A la française">
+                            </div>
 
-                            <img src="./images/restaurants/a_la_française.jpg" alt="A la Française">
-                        </div>
+                            <div class="card_body">
+                            <h3>À la française</h3>
+                            <p>Cité Rouge</p>
 
-                        <div class="card-body">
-
-                            <h3>A la française
-                                <div class="container">
-                                    <div class="solid">
-                                        <svg width="30" height="30" viewBox="0 0 512 512">
-                                            <path d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z"/>
-                                        </svg>
-                                    </div>
-                                    <div class="regular">
-                                        <svg width="30" height="30" viewBox="0 0 512 512">
-                                            <path d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z"/>
-                                        </svg>
-                                    </div>
+                            <div class="icon">
+                                <div class="solid">
+                                    <svg width="30" height="30" viewBox="0 0 512 512">
+                                        <defs>
+                                            
+                                            <linearGradient id="Gradient1" x1="0" x2="0" y1="0" y2="1">
+                                                <stop offset="0%" stop-color="#9356DC"/>
+                                                <stop offset="100%" stop-color="#FF79DA"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <path d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z"/>
+                                    </svg>
                                 </div>
-                            </h3>
 
-                            <p>Cité Rouge</p>                                
-                        </div>
-                    </a>
+                                <div class="regular">
+                                    <svg width="30" height="30" viewBox="0 0 512 512">
+                                        <path d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            </div>
+                        </a>
                     </div>
-
+                    
                     <!-- Card 4 -->
-
                     <div class="card">
+                        <a href="./Ledelicedessens.html">
 
-                    <a href="./Ledelicedessens.html">
-                        <div class="card-image">
+                            <div class="card_img">
+                            <img src="./images/restaurants/le_delice_des_sens.jpg" alt="Le delice des sens">
+                            </div>
 
-                            <img src="./images/restaurants/le_delice_des_sens.jpg" alt="Le Délice des Sens">
-                        </div>
+                            <div class="card_body">
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
 
-                        <div class="card-body">
-
-                            <h3>Le délice des sens
-                                <div class="container">
-                                    <div class="solid">
-                                        <svg width="30" height="30" viewBox="0 0 512 512">
-                                            <path d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z"/>
-                                        </svg>
-                                    </div>
-                                    <div class="regular">
-                                        <svg width="30" height="30" viewBox="0 0 512 512">
-                                            <path d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z"/>
-                                        </svg>
-                                    </div>
+                            <div class="icon">
+                                <div class="solid">
+                                    <svg width="30" height="30" viewBox="0 0 512 512">
+                                        <defs>
+                                            
+                                            <linearGradient id="Gradient1" x1="0" x2="0" y1="0" y2="1">
+                                                <stop offset="0%" stop-color="#9356DC"/>
+                                                <stop offset="100%" stop-color="#FF79DA"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <path d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z"/>
+                                    </svg>
                                 </div>
-                            </h3>
 
-                            <p>Folie-Méricourt</p>    
-                        </div>
-                    </a>
+                                <div class="regular">
+                                    <svg width="30" height="30" viewBox="0 0 512 512">
+                                        <path d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-            </section>
-        </main>
-        </body>
+            </main> 
 
-        <!-- Footer -->
+            <!-- Footer -->
+            <footer>
+                <h3>ohmyfood</h3>
 
-        <footer>
-
-        <div class="logo">
-
-            <h3>ohmyfood</h3>
-            
+                <div>
+                    <a class="text" href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+                    <a class="text" href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Contact</a>
+                </div>
+            </footer>
         </div>
-        <div>
-            <a class="text" href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
-            <a class="text" href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
-            <a href="#">Mentions légales</a>
-            <a href="#">Contact</a>
-        </div>
-
-        </footer>
-    </div>
+    </body>
 </html>

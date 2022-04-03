@@ -1,7 +1,7 @@
 footer {
   font-family: "Roboto";
   width: 100%;
-  background-color: #000000cc;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 footer h3 {
   font-family: "Shrikhand";
