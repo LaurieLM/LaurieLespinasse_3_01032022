@@ -3,21 +3,18 @@ $color_secondary: #FF79DA;
 $color_tertiary: #99E2D0;
 
 main {
+    background-color: #f5f5f5;
     h2 {
         font-family: 'Roboto';
-        margin: 40px 0px 30px 20px;
+        padding: 40px 0px 30px 20px;
     }
-    .section_resto {
-        background-color: #f5f5f5;
-        padding: 1px 0px 50px 0px;
 
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            flex-direction: column;
-            align-content: space-around;
-        }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-content: space-around;
 
         .card {
             display: inline-block;
@@ -28,87 +25,84 @@ main {
             margin: 0px 0px 20px 0px;
             padding-bottom: 17px;
             border-radius: 15px 15px 15px 15px;
-            
-
+                
+    
             a {
                 text-decoration: none;
                 color: black;
-            }
-        }
-
-        .card-image {
-            position: relative;
-            width: auto;
             
-
-            img {
-                width: 100%;
-                height: 175px;
-                border-radius: 15px 15px 0 0;
-                object-fit: cover;
-                
-                
-            }
-        }
-        .card-body {
-            position: relative;
-            text-align: left;
-            left: 17px;
-            top: -13px;
-
-            h3 {
-                margin: 20px 0px 0px 0px;
-
-                .regular,.solid {
-                    /*  Sert à centrer le svg dans sa div  */
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    
-                    /*  Sert à centrer la div dans le container, ces valeurs peuvent bouger dans ton projet  */
-                    position: absolute;
-                    top: 28%;
-                    left: 84%;
-                    
-                    /*  Sert à donner une taille à la div pour le hover  */
-                    background-color: #fff;
-                    width: 25px;
-                    height: 25px;
-                    border-radius: 10px;
+                .card_img {
+                    position: relative;
+                    width: auto;
+                            
+                    img {
+                        width: 100%;
+                        height: 175px;
+                        border-radius: 15px 15px 0 0;
+                        object-fit: cover;
+                    }
                 }
-
-                  
-                /* Sert à ce que le coeur vide soit devant le coeur plein pour le masquer */
-                .regular {
-                    z-index: 10;
-                }
-
-                .solid {
-                    fill: url(#Gradient1);
-                }
-                  
-                /* Sert à faire disparaitre le coeur vide sur le hover */
-                .regular:hover {
-                    display:none;
-                    
-                }
-            }
-
-            p {
-                font-weight: 300;
-                font-size: 15px;
-                margin: 5px 0px 0px 0px;
-            }
             
+                .card_body {
+                    position: relative;
+                    text-align: left;
+                    left: 17px;
+                    top: -13px;
+            
+                    h3 {
+                        margin: 20px 0px 0px 0px;
+                    }
+                        
+                    p {
+                        font-weight: 300;
+                        font-size: 15px;
+                        margin: 5px 0px 0px 0px;
+                    }
+                        
+                    .icon {
+                        .regular,.solid {
+                            /*  Sert à centrer le svg dans sa div  */
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                                
+                            /*  Sert à centrer la div dans le container, ces valeurs peuvent bouger dans ton projet  */
+                            position: absolute;
+                            top: 28%;
+                            left: 84%;
+                                
+                            /*  Sert à donner une taille à la div pour le hover  */
+                            background-color: #fff;
+                            width: 25px;
+                            height: 25px;
+                            border-radius: 10px;
+                        }
+            
+                            
+                        /* Sert à ce que le coeur vide soit devant le coeur plein pour le masquer */
+                        .regular {
+                            z-index: 10;
+                        }
+            
+                        .solid {
+                            fill: url(#Gradient1);
+                        }
+                            
+                        /* Sert à faire disparaitre le coeur vide sur le hover */
+                        .regular:hover {
+                            display:none;
+                                
+                        }
+                    }            
+                }
+            }
         }
-        
     }
+
 }
 
 @media screen and (min-width: 768px) {
     main {
-        .section_resto {
-
             h2 {
                 font-size: 35px;
                 margin: 40px 0px 30px 30px;
@@ -136,7 +130,7 @@ main {
             p {
                 font-size: 18px;
             }
-        }
+        
     }
 }
 

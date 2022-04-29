@@ -1,6 +1,4 @@
 body {
-  position: absolute;
-  z-index: 1;
   font-family: "Roboto";
   margin: 0;
 }
@@ -50,16 +48,10 @@ form {
   /* Firefox */
 }
 
-.section_nav h2 {
+.fonctionnement h2 {
   margin: 40px 0px 30px 20px;
 }
-.section_nav nav {
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  align-items: center;
-}
-.section_nav .number {
+.fonctionnement .number {
   position: absolute;
   width: 25px;
   height: 21px;
@@ -73,7 +65,7 @@ form {
   margin-left: -18px;
   padding-top: 5px;
 }
-.section_nav .icon1 {
+.fonctionnement .icon1 {
   color: grey;
   padding: 0px 32px 0px 36px;
   font-size: larger;

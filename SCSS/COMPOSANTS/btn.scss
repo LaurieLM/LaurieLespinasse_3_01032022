@@ -21,11 +21,11 @@ body {
     box-shadow: 0px 0px 9px 2px grey;
 }
 
-.btn_accueil {
+.accueil {
     @include btn;
 }
 
-.btn_accueil:hover {
+.accueil:hover {
     @include btn_hover;
 }
 
